@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.adminpagecontroller">
+   <children>
+      <ImageView fitHeight="668.0" fitWidth="750.0" pickOnBounds="true">
+         <image>
+            <Image url="@books.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="inser" layoutX="54.0" layoutY="289.0" mnemonicParsing="false" onAction="#insert_func" prefHeight="55.0" prefWidth="158.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Insert" textFill="#111111">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="updat" layoutX="554.0" layoutY="289.0" mnemonicParsing="false" onAction="#update_func" prefHeight="55.0" prefWidth="158.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Update" textFill="#111111">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Label layoutX="213.0" layoutY="64.0" prefHeight="70.0" prefWidth="366.0" text="Welcome Admin" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Button fx:id="del" layoutX="302.0" layoutY="289.0" mnemonicParsing="false" onAction="#delete_func" prefHeight="55.0" prefWidth="158.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Delete" textFill="#111111">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="54.0" layoutY="580.0" mnemonicParsing="false" onAction="#back_func" prefHeight="55.0" prefWidth="158.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Back" textFill="#111111">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

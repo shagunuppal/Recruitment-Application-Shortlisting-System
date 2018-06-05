@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.guestmorecontroller">
+   <children>
+      <ImageView fitHeight="668.0" fitWidth="750.0" pickOnBounds="true">
+         <image>
+            <Image url="@books.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="cont" layoutX="83.0" layoutY="146.0" mnemonicParsing="false" onAction="#show_all" prefHeight="58.0" prefWidth="145.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Check" textFill="#111111">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Label layoutX="308.0" layoutY="38.0" prefHeight="70.0" prefWidth="165.0" text="Guest" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="54.0" layoutY="557.0" mnemonicParsing="false" onAction="#back_func" prefHeight="58.0" prefWidth="204.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Back" textFill="#111111">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Label layoutX="73.0" layoutY="216.0" onDragDetected="#show_all" prefHeight="70.0" prefWidth="165.0" text="Display All students" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="cont1" layoutX="318.0" layoutY="146.0" mnemonicParsing="false" onAction="#simple1" prefHeight="58.0" prefWidth="145.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Check" textFill="#111111">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Label layoutX="308.0" layoutY="216.0" onDragDetected="#show_all" prefHeight="70.0" prefWidth="166.0" text="Studetns with CGPA&gt;some value in a given department" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cgpa" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="453.0" layoutY="446.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label layoutX="360.0" layoutY="430.0" onDragDetected="#show_all" prefHeight="70.0" prefWidth="74.0" text="CGPA &gt;" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="325.0" layoutY="476.0" onDragDetected="#show_all" prefHeight="70.0" prefWidth="118.0" text="Department" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="depa" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="453.0" layoutY="500.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="fiel" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="453.0" layoutY="554.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label layoutX="347.0" layoutY="538.0" onDragDetected="#show_all" prefHeight="70.0" prefWidth="88.0" text="Field" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Button fx:id="cont11" layoutX="544.0" layoutY="146.0" mnemonicParsing="false" onAction="#simple2" prefHeight="58.0" prefWidth="145.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Check" textFill="#111111">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Label layoutX="523.0" layoutY="216.0" onDragDetected="#show_all" prefHeight="70.0" prefWidth="166.0" text="Ranking based on field, Department and CGPA" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="cont2" layoutX="83.0" layoutY="326.0" mnemonicParsing="false" onAction="#check_average" prefHeight="58.0" prefWidth="145.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Check" textFill="#111111">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Label layoutX="73.0" layoutY="405.0" onDragDetected="#get_average" prefHeight="70.0" prefWidth="165.0" text="Get averge CGPA" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="288.0" layoutY="573.0" onDragDetected="#show_all" prefHeight="70.0" prefWidth="166.0" text="Field value" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fiel1" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="453.0" layoutY="596.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.adminlogincontroller">
+   <children>
+      <ImageView fitHeight="668.0" fitWidth="750.0" pickOnBounds="true">
+         <image>
+            <Image url="@books.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="cont" layoutX="507.0" layoutY="552.0" mnemonicParsing="false" onAction="#continue_func" prefHeight="58.0" prefWidth="204.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="CONTINUE" textFill="#111111">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Label layoutX="314.0" layoutY="32.0" prefHeight="70.0" prefWidth="149.0" text="LOGIN" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="285.0" layoutY="188.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label blendMode="COLOR_BURN" layoutX="94.0" layoutY="187.0" prefHeight="35.0" prefWidth="134.0" text="Username">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+               <effect>
+                  <Glow level="0.56" />
+               </effect>
+            </Label>
+            <TextField fx:id="password" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="285.0" layoutY="258.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label blendMode="COLOR_BURN" layoutX="94.0" layoutY="257.0" prefHeight="35.0" prefWidth="134.0" text="Password">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+               <effect>
+                  <Glow level="0.56" />
+               </effect>
+            </Label>
+            <Button fx:id="back" layoutX="60.0" layoutY="555.0" mnemonicParsing="false" onAction="#back_func" prefHeight="58.0" prefWidth="204.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Back" textFill="#111111">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.admininsertcontroller">
+   <children>
+      <ImageView fitHeight="668.0" fitWidth="750.0" pickOnBounds="true">
+         <image>
+            <Image url="@books.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="cont" layoutX="585.0" layoutY="508.0" mnemonicParsing="false" onAction="#continue_func" prefHeight="58.0" prefWidth="150.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="CONTINUE" textFill="#111111">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Label layoutX="289.0" layoutY="14.0" prefHeight="70.0" prefWidth="164.0" text="INSERT" textFill="#f5e7c4" wrapText="true">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="269.0" layoutY="121.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="department" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="269.0" layoutY="183.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="82.0" layoutY="117.0" prefHeight="46.0" prefWidth="92.0" text="Name" textFill="#f5e7c4">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label layoutX="51.0" layoutY="179.0" prefHeight="46.0" prefWidth="181.0" text="Department" textFill="#f5e7c4">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label layoutX="90.0" layoutY="242.0" prefHeight="46.0" prefWidth="104.0" text="CGPA" textFill="#f5e7c4">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label layoutX="60.0" layoutY="303.0" prefHeight="35.0" prefWidth="134.0" text="Work Ex." textFill="#f5e7c4">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label layoutX="30.0" layoutY="359.0" prefHeight="46.0" prefWidth="222.0" text="Research Paper" textFill="#f5e7c4">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label layoutX="93.0" layoutY="417.0" prefHeight="46.0" prefWidth="69.0" text="LOR" textFill="#f5e7c4">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label layoutX="31.0" layoutY="479.0" prefHeight="46.0" prefWidth="222.0" text="English Speaker" textFill="#f5e7c4">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label layoutX="19.0" layoutY="534.0" prefHeight="46.0" prefWidth="243.0" text="No. of Languages" textFill="#f5e7c4">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="cgpa" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="269.0" layoutY="246.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="workex" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="269.0" layoutY="307.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="researchpaper" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="269.0" layoutY="363.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="lor" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="269.0" layoutY="421.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="english" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="269.0" layoutY="483.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="no_of_lang" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="269.0" layoutY="538.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Button fx:id="back" layoutX="585.0" layoutY="580.0" mnemonicParsing="false" onAction="#back_func" prefHeight="58.0" prefWidth="150.0" style="-fx-background-radius: 2000; -fx-background-color: #F5A207;" text="Back" textFill="#111111">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Label layoutX="82.0" layoutY="586.0" prefHeight="46.0" prefWidth="142.0" text="Project ID" textFill="#f5e7c4">
+               <font>
+                  <Font name="System Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="project_id" alignment="CENTER" blendMode="SOFT_LIGHT" layoutX="269.0" layoutY="590.0" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #FDEBD0;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
