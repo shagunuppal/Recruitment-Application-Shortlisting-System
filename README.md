@@ -1,6 +1,6 @@
 # Recruitment Application Shortlisting System
 
-### Course Project for Fundamentals of Database Management Systems (CSE202) 
+### Course Project : Fundamentals of Database Management Systems (CSE202) 
 #### Instructor : Dr. Vikram Goyal 
   
 This repository is a Java based implementation of Applicant shortlisting system in order to find top contenders for recruitment/admission etc. based on criteria(could be academic record, experience etc.).
